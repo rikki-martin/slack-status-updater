@@ -13,9 +13,10 @@ with open('config.yml') as file:
 print(config)
 
 # Config
-TEXT = 'Lunch Time'
-EMOJI = ':sushi:'
-EXPIRATION = int(time.time()) + 60 * 60  # Gets current time in UNIX timestamp then adds an hour
+TEXT = config.get("text")
+EMOJI = config.get("emoji")
+EXPIRE_IN_MINUTES = config.get("expire_in_minutes")
+EXPIRATION = int(time.time()) + EXPIRE_IN_MINUTES * 60  # Gets current time in UNIX timestamp then adds however many minutes.
 
 slack_token = config.get("slack_oauth_token")
 print(slack_token)

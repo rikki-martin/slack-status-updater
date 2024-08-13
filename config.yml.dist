@@ -1,1 +1,5 @@
 slack_oauth_token: xoxp-your-token-id
+
+text: 'Place Status Message Here'
+emoji: ':emojiname:'
+expire_in_minutes: 60 
