@@ -1,1 +1,6 @@
 config.yml
+build/
+dist/
+penguin.gif
+set_lunch_status
+slack_status_updater.spec
